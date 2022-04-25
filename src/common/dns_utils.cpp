@@ -45,8 +45,8 @@ using namespace epee;
 
 static const char *DEFAULT_DNS_PUBLIC_ADDR[] =
 {
-  "45.32.134.30",    // CCC (Germany)
-  "144.202.105.40",       // FDN (France)
+  //"45.32.134.30",    // CCC (Germany)
+  //"144.202.105.40",       // FDN (France)
 };
 
 static boost::mutex instance_lock;
@@ -99,9 +99,9 @@ get_builtin_ds(void)
 {
   static const char * const ds[] =
   {
-    ". IN DS 19036 8 2 49AAC11D7B6F6446702E54A1607371607A1A41855200FD2CE1CDDE32F24E8FB5\n",
-    ". IN DS 20326 8 2 E06D44B80B8F1D39A95C0B0D7C65D08458E880409BBC683457104237C7F8EC8D\n",
-    NULL
+  //  ". IN DS 19036 8 2 49AAC11D7B6F6446702E54A1607371607A1A41855200FD2CE1CDDE32F24E8FB5\n",
+//    ". IN DS 20326 8 2 E06D44B80B8F1D39A95C0B0D7C65D08458E880409BBC683457104237C7F8EC8D\n",
+//    NULL
   };
   return ds;
 }

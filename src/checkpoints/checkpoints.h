@@ -175,7 +175,7 @@ namespace cryptonote
      *
      * @return true if loading successful and no conflicts
      */
-    bool load_new_checkpoints(const std::string &json_hashfile_fullpath, network_type nettype=MAINNET, bool dns=true);
+    bool load_new_checkpoints(const std::string &json_hashfile_fullpath, network_type nettype=MAINNET, bool dns=false); // changed to false - SWS 04/25/2022
 
     /**
      * @brief load new checkpoints from json
