@@ -33,16 +33,14 @@
 
 const hardfork_t mainnet_hard_forks[] = {
   // version 1 from the start of the blockchain
-  { 1, 0, 0, 1341378000 },
+  { 1, 1, 0, 1341378000 },
 
-  // version 2 starts from block 1009827, which is on or around the 20th of March, 2016. Fork time finalised on 2015-09-20. No fork voting occurs for the v2 fork.
-  { 14, 1, 0, 1341377880 },
+  // version 2 starts from block 2
+  { 14, 2, 0, 1341378060 },
 
-  { 15, 8000000, 0, 1608223241 }, // temp so tests test with these consensus rules
-  { 16, 8000001, 0, 1608223242 }, // temp so tests test with these consensus rules
 };
 const size_t num_mainnet_hard_forks = sizeof(mainnet_hard_forks) / sizeof(mainnet_hard_forks[0]);
-const uint64_t mainnet_hard_fork_version_1_till = 2;
+const uint64_t mainnet_hard_fork_version_1_till = 1;
 
 const hardfork_t testnet_hard_forks[] = {
   // version 1 from the start of the blockchain
